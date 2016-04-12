@@ -1,4 +1,4 @@
-require_relative './config/environment.rb'
+require_relative '../config/environment.rb'
 
 class NYT
   @@key = YAML.load_file('application.yml')["API_KEY"]
@@ -14,7 +14,7 @@ class NYT
         @title = article_hash["title"]
         @@top_ten_titles << @title
       end
-              binding.pry
+              # binding.pry
     end
   end
 
